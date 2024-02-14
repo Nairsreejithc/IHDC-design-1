@@ -1,0 +1,48 @@
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.navbar {
+  display: flex;
+  background-color: #b8b3b3;
+  
+}
+
+/* Navbar.css */
+.navbar {
+  text-align: center; /* Center align the content */
+  position: fixed; /* Fix the navbar position */
+  width: 100%; /* Take full width */
+  top: 0; /* Position at the top of the page */
+  background-color: #333; /* Example background color */
+  z-index: 1000; /* Ensure the navbar is on top of other elements */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add some spacing between list items */
+}
+
+.navbar ul li:last-child {
+  margin-right: 0; /* Remove margin for the last list item */
+}
+
+.navbar ul li a {
+  color: white; /* Example text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Add padding around links */
+  display: block;
+}
+
+.navbar ul li a:hover {
+  background-color: #555; /* Example background color on hover */
+}
